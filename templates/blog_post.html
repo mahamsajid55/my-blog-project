@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Post</title>
+  <link rel="stylesheet" href="blog.css">
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Blog Post Box -->
+    <section class="box blog-post">
+      <h2>How to Get Started with Web Development</h2>
+      <p class="date">Published on April 10, 2025</p>
+      <div class="content">
+        <p>Web development can be an exciting and rewarding journey. To get started, you’ll need to choose a programming language, set up your development environment, and begin working on projects...</p>
+        <p>Start by learning HTML and CSS for building the structure and design of websites. Once you're comfortable with the basics, you can move on to JavaScript for adding interactivity...</p>
+        <p>As you progress, consider exploring frameworks and libraries like React or Vue.js. Don't forget to work on small projects to practice your skills!</p>
+      </div>
+    </section>
+
+    <!-- Like and Share Box -->
+    <section class="box like-share">
+      <button id="like-btn">Like</button>
+      <span id="like-count">0</span> likes
+    </section>
+
+    <!-- Comments Box -->
+    <section class="box comments">
+      <h3>Comments</h3>
+      <div id="comment-list"></div>
+      <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+      <button id="submit-comment">Submit</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maham Sajid</p>
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>

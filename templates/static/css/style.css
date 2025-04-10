@@ -1,0 +1,79 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #6a3c3e;
+    color: white;
+    padding: 20px;
+  }
+  
+  /* Circle Container */
+  .circle-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 250px;
+
+  }
+  
+  /* Individual Circles */
+  .circle {
+    width: 200px;
+    height: 200px;
+    background-color: #9c4645;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .circle a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  /* Hover Effects (Animation) */
+  .circle:hover {
+    transform: scale(1.1);
+    background-color: #cc9495;
+  }
+  
+  .circle:active {
+    transform: scale(0.9);
+  }
+  
+  /* Add some space between circles */
+  .circle-container div {
+    margin: 0 10px;
+  }
+  
+  /* Extra Animation for Click */
+.circle.clicked {
+    transform: scale(1.5); 
+    background-color: #7d383a; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #6a3c3e;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  

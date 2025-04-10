@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exploring JavaScript Frameworks</title>
+  <link rel="stylesheet" href="explore_javascript.css">
+</head>
+<body>
+  <header>
+    <h1>My Blog</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Blog Post Box -->
+    <section class="box blog-post">
+      <h2>Exploring JavaScript Frameworks</h2>
+      <p class="date">Published on April 8, 2025</p>
+      <div class="content">
+        <p>JavaScript frameworks like React, Vue, and Angular have become very popular in the world of web development. They simplify the process of building complex, interactive user interfaces and have gained large communities of developers. In this post, we'll compare their features, use cases, and strengths to help you choose the best framework for your next project.</p>
+
+        <h3>React</h3>
+        <p>React is a declarative, component-based JavaScript library created by Facebook. It focuses on building user interfaces (UIs) using reusable components, which makes it easy to build complex applications by breaking them down into smaller, manageable pieces.</p>
+        <ul>
+          <li><strong>Pros:</strong> Fast rendering, large community, great for single-page applications (SPAs).</li>
+          <li><strong>Cons:</strong> Requires learning JSX (JavaScript and HTML mix), not a full framework (you'll need additional libraries).</li>
+          <li><strong>Popular Use Cases:</strong> Facebook, Instagram, Airbnb, Netflix.</li>
+        </ul>
+
+        <h3>Vue.js</h3>
+        <p>Vue.js is a progressive JavaScript framework that focuses on the view layer of applications. It's easy to integrate with other libraries or projects and can be used for building both small and large-scale applications. Vue's reactive data binding and component system make it similar to React, but with a more flexible approach.</p>
+        <ul>
+          <li><strong>Pros:</strong> Easy to learn, great documentation, flexible integration with existing projects.</li>
+          <li><strong>Cons:</strong> Smaller community compared to React and Angular, sometimes less enterprise-level support.</li>
+          <li><strong>Popular Use Cases:</strong> Alibaba, Xiaomi, GitLab, Laravel (Vue.js is commonly used with the Laravel backend).</li>
+        </ul>
+
+        <h3>Angular</h3>
+        <p>Angular is a full-fledged, opinionated JavaScript framework developed by Google. It provides everything you need to build a modern web application, including routing, state management, and form handling. Angular is a complete solution, meaning it can handle both the view and logic layers of your application out of the box.</p>
+        <ul>
+          <li><strong>Pros:</strong> Comprehensive framework, built-in features (routing, state management), large community and enterprise support.</li>
+          <li><strong>Cons:</strong> Steep learning curve, large bundle size, not as flexible (opinionated approach).</li>
+          <li><strong>Popular Use Cases:</strong> Google, Microsoft Office Web, YouTube, IBM.</li>
+        </ul>
+
+        <p>Choosing the right JavaScript framework depends on your project requirements and your level of experience. If you're building a highly interactive UI with reusable components, React might be the best choice. If you prefer a lightweight framework with easy integration and flexible use, Vue.js is a great option. And if you're building a large-scale enterprise application that requires a full-featured solution, Angular could be the way to go.</p>
+      </div>
+    </section>
+
+    <!-- Like and Share Box -->
+    <section class="box like-share">
+      <button id="like-btn">Like</button>
+      <span id="like-count">0</span> likes
+    </section>
+
+    <!-- Comments Box -->
+    <section class="box comments">
+      <h3>Comments</h3>
+      <div id="comment-list"></div>
+      <textarea id="comment-input" placeholder="Write a comment..."></textarea>
+      <button id="submit-comment">Submit</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Maham Sajid</p>
+  </footer>
+
+  <script src="blog.js"></script>
+</body>
+</html>
