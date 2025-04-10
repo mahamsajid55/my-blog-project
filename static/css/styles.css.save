@@ -1,0 +1,6 @@
+body {
+    background-color: #fefefe;
+    color: #6a3c3e;
+    font-family: Arial, sans-serif;
+}
+
