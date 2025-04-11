@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe; /* Off-white background */
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #6a3c3e; /* Dark Red */
+}
+
+/* Header Styles */
+header {
+  background-color: #6a3c3e; /* Dark Red */
+  color: #fefefe; /* Off-white text */
+  padding: 40px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.intro h2 {
+  font-size: 2rem;
+  color: #9c4645; /* Muted Red */
+}
+
+.intro p {
+  font-size: 1.1rem;
+  color: #aaa7a2; /* Light Gray */
+}
+
+/* Circle Container */
+.circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #cc9495; 
+  color: #fefefe; 
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 20px; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.circle a {
+  color: #fefefe; /* Off-white text */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.circle:hover {
+  background-color: #6a3c3e; /* Dark Red on hover */
+  transform: scale(1.1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #9c4645; 
+  color: #fefefe; 
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 320px; 
+  padding-bottom: 50px;
+  
+}
+
+
+footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .circle-container {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .circle {
+      width: 120px;
+      height: 120px;
+      font-size: 16px;
+  }
+
+  header h1 {
+      font-size: 2.5rem;
+  }
+}
