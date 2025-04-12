@@ -11,14 +11,14 @@
     <h1>About Me</h1>
     <nav>
       <ul>
-        <a href="{{ url_for('home') }}">Home</a>
-        <a href="{{ url_for('blog') }}">Blog</a>
-        <a href="{{ url_for('contact') }}">Contact</a>
-        <a href="{{ url_for('blog_post') }}">Blog Post</a>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('blog') }}">Blog</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li><a href="{{ url_for('blog_post') }}">Blog Post</a></li>
       </ul>
     </nav>
   </header>
-
+  
   <main>
     <section id="intro">
       <h2>Hi, I'm Maham Sajid</h2>
@@ -43,7 +43,17 @@
 
     <section id="hobbies">
       <h2>Hobbies & Interests</h2>
-      <p>Outside of web development, I enjoy learning new programming languages, playing video games, and exploring new technologies. I'm also passionate about design and photography.</p>
+      <p>Outside of web development, I enjoy learning new programming languages, playing video games, and exploring new technologies. I'm also passionate about design and photography. Additionally, I have a keen interest in shopping, especially when it comes to:</p>
+
+        <ul>
+          <li><span class="bullet"></span> Exploring fashion trends and curating stylish outfits.</li>
+          <li><span class="bullet"></span> Collecting tech gadgets and keeping up with the latest releases.</li>
+          <li><span class="bullet"></span> Visiting local markets and discovering unique, handmade products.</li>
+          <li><span class="bullet"></span> Browsing online shopping platforms to find great deals and products.</li>
+          <li><span class="bullet"></span> Learning about sustainable fashion and eco-friendly shopping habits.</li>
+          <li><span class="bullet"></span> Experimenting with DIY crafts and upcycling items for personal projects.</li>
+          <li><span class="bullet"></span> Interior design shopping, finding unique decor pieces to refresh living spaces.</li>
+        </ul>
     </section>
   </main>
 

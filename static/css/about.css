@@ -7,36 +7,76 @@ body {
     text-align: center;
     color: #333;
   }
-  
-  header {
-    background-color: #6a3c3e;
-    color: white;
-    padding: 20px;
-  }
-  
+/* Header Styles */
+header {
+  background-color: #6a3c3e;
+  color: #fefefe;
+  padding: 20px 20px;
+  text-align: center;
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+}
+
+main {
+  padding-top: 100px; 
+}
+
+/* Navigation Styles */
+nav {
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fefefe; 
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effects on navigation links */
+nav ul li a:hover {
+  color: #cc9495;
+  transform: translateY(-5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   header h1 {
-    margin: 0;
+    font-size: 2.5rem;
   }
-  
+
   nav ul {
-    list-style-type: none;
-    padding: 0;
+    flex-direction: column; 
+    gap: 15px;
   }
-  
-  nav ul li {
-    display: inline;
-    margin: 0 15px;
-  }
-  
+
   nav ul li a {
-    text-decoration: none;
-    color: white;
+    font-size: 1.1rem;
   }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-  
+}
+
   /* Main Content */
   main {
     padding: 30px;
@@ -50,7 +90,22 @@ body {
   h2 {
     color: #6a3c3e;
   }
-  
+  #intro{
+    margin-top: 12rem;
+    background-color: #cc9495;
+    border-radius: 1rem;
+    height: 8rem;
+  }
+
+#intro h2 {
+  font-size: 2.5rem;
+}
+
+#intro p {
+  font-size: 1.1rem;
+  color: black; /* Light Gray */
+}
+
   /* Skills List */
   #skills ul {
     list-style-type: none;
@@ -74,31 +129,108 @@ body {
     cursor: pointer;
   }
   
-  /* Hover/Touch Animation (Upwards movement) */
   #skills ul li:hover {
     transform: translateY(-10px); 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
   }
   
-  /* Active effect for touch or click */
   #skills ul li:active {
     transform: translateY(-5px); 
   }
   
-  /* For touch effect */
 #skills ul li.touched {
     transform: translateY(-5px); 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);  
 }
-   
-  /* Footer */
-  footer {
-    background-color: #6a3c3e;
-    color: white;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    margin-bottom: -10rem;
+
+/* Section Styling */
+#hobbies {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  margin-top: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#hobbies p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 12px;
+  padding-left: 30px;
+  position: relative;
+  padding-right: 20px; 
+}
+
+/* Custom Bullet Points */
+ul li .bullet {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: #6a3c3e; 
+  border-radius: 50%;
+}
+
+/* Hover Effects on List Items */
+ul li:hover {
+  background-color: #f2e5e5;
+  transition: background-color 0.3s ease-in-out;
+  padding-left: 35px;
+}
+
+ul li:hover .bullet {
+  background-color: #9c4645; 
+}
+  /* Footer Styling */
+footer {
+  background-color: #6a3c3e;
+  color: #fefefe; 
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #hobbies {
+    padding: 20px;
   }
-  
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  #hobbies p {
+    font-size: 1rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+}
